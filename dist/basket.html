@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Game</title>
+    <title>Basket</title>
 </head>
 
 <body id="basket-page">
@@ -239,13 +239,13 @@
                                         <div class="form-basket__wrapp">
                                             <div class="form-basket__text">
                                                 <p class="form-basket__total-sum">
-                                                    Итого: <span>619,18 ₽</span>
+                                                    Итого: <span> ₽</span>
                                                 </p>
                                                 <p class="form-basket__total-items">
-                                                    Товаров: <span>4</span>
+                                                    Товаров: <span></span>
                                                 </p>
                                                 <p class="form-basket__discount">
-                                                    Скидка: <span>122 ₽</span>
+                                                    Скидка: <span>₽</span>
                                                 </p>
                                             </div>
                                             <div class="form-basket__inner">
@@ -269,9 +269,9 @@
                                                         placeholder="Введите промокод">
                                                     <button class="form-basket__promocode-btn">Проверить</button>
                                                 </div>
-                                                <button class="accent-btn form-basket__submit" type="submit">
+                                                <a class="accent-btn form-basket__submit" href="./ordering.html">
                                                     Создать заявку
-                                                </button>
+                                                </a>
                                             </div>
                                         </div>
                                     </form>
@@ -902,6 +902,19 @@
                             &#10006;
                         </button>
                     </div>
+                </div>
+            </div>
+            <!-- Удаление товара из корзины -->
+            <div class="delete__wrapp popup__wrapp" data-target="deleteItem-path">
+                <span class="delete__title">Уверены, что хотите удалить товар из корзины</span>
+                <div class="delete__buttons">
+                    <button class="light-accent-btn delete__button" type="button" aria-label="Удалить">Удалить</button>
+                    <button class="light-btn delete__button" type="button">Отменить</button>
+                </div>
+                <div class="popup__close">
+                    <button class="popup__close-item" type="button">
+                        &#10006;
+                    </button>
                 </div>
             </div>
         </div>
